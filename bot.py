@@ -239,7 +239,7 @@ async def help_command(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
 # ══════════════════════════════════════════════════════════════════════════════
 async def new_request(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     uid = update.effective_user.id
-    if uid in (USER_L_ID, USER_C_ID, ADMIN_ID):
+    if uid in (USER_L_ID, USER_C_ID):
         await update.message.reply_text("This command is for sales representatives only.")
         return ConversationHandler.END
     ctx.user_data.clear()

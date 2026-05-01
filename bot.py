@@ -810,7 +810,7 @@ async def l_thc(update: Update, ctx: ContextTypes.DEFAULT_TYPE) -> int:
         await update.message.reply_text("⚠️ Please enter a valid positive number:")
         return L_THC
     ctx.user_data["l_thc"] = text
-    await update.message.reply_text("Enter <b>Freight/cntr</b> (USD):", parse_mode="HTML")
+    await update.message.reply_text("Enter <b>Freight/mt</b> (USD):", parse_mode="HTML")
     return L_FREIGHT
 
 

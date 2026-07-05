@@ -1,2 +1,4 @@
 python-telegram-bot[job-queue]==21.6
 python-dotenv==1.0.1
+google-auth
+google-api-python-client
